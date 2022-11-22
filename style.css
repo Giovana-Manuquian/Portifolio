@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jomolhari&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background: #121211;
+    color: white;
+}
+
+.container {
+    width: 1200px;
+    height: 100vh;
+}
+
+.h3-cabecalho {
+    font-family: 'Inria Serif';
+    color: #C0B5AC;
+    margin-left: 10%;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    /* width: 1200px; */
+    margin-top: 20px;
+    margin-right: 12%;
+}
+
+.menu {
+    display: flex;
+    gap: 40px;
+    font-family: 'Inria Serif';
+    font-size: 1em;
+}
+
+.menu a {
+    color: #C0B5AC;
+}
+
+.menu a:hover {
+    background-color: #C0B5AC;
+    color: black;
+    transition: 0.5s;
+    /* opacity: 0.2; */
+    border-radius: 5px;
+}
+
+.parte-apresentacao {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 18%;
+}
+
+.apresentacao {
+    font-family: 'Jomolhari';
+    font-size: 30px;
+    margin-left: 15%;
+}
+
+.imagem-apresentacao-2 {
+    display: none;
+}
+
+#sobre {
+    border-top: 0.4px solid #C0B5AC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    background: rgba(27, 26, 26, 0.867);
+    margin-bottom: -10%;
+}
+
+.informacoes h2 {
+    font-size: 1.8em;
+    font-family: 'Jost';
+    margin-top: 5px;
+    margin-left: 45%;
+    padding-bottom: 60px;
+}
+
+.informacoes p {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+    padding-left: 20%;
+    padding-right: 20%;
+    /* margin-left: 70px;
+    margin-right: 70px; */
+    text-align: justify;
+    /* text-indent: 20px; */
+}
+
+#habilidades {
+    margin-left: 15%;
+    margin-top: 20%;
+    border-top: 0.4px solid #C0B5AC;
+    padding: 10px;
+    margin-bottom: -10%;
+}
+
+.h1-skills {
+    margin-left: 37%;
+    font-size: 1.8em;
+    font-family: 'Jost';
+}
+
+.p-html,
+.p-css,
+.p-js,
+.p-canva {
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-2 {
+    width: 80%;
+    /* height: 100vh; */
+    background-color: rgba(27, 26, 26, 0.867);
+}
+
+.skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.html {
+    width: 50%;
+    background-color: #D0C1AA;
+}
+
+.css {
+    width: 50%;
+    background-color: rgba(0, 0, 255, 0.397);
+}
+
+.js {
+    width: 30%;
+    background-color: rgba(255, 0, 0, 0.452);
+}
+
+.canva {
+    width: 70%;
+    background-color: rgba(0, 0, 255, 0.397);
+}
+
+.h2-projetos {
+    margin-top: 20%;
+    padding: 20px;
+    border-top: 0.4px solid #C0B5AC;
+    font-family: 'Jost';
+}
+
+#trabalhos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    margin-bottom: -10%;
+}
+
+.projetos {
+    width: 180px;
+    height: 200px;
+    background-image: url('./img/trabalhos.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #C0B5AC;
+    border-left: 1px solid #C0B5AC;
+    border-radius: 10px;
+}
+
+#redes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 20%;
+    margin-bottom: 5%;
+    font-family: 'Jost';
+    border-top: 0.4px solid #C0B5AC;
+    padding: 5%;
+}
+
+@media only screen and (max-width: 720px) {
+
+    .container {
+        width: auto;
+    }
+
+    .h3-cabecalho {
+        display: none;
+    }
+
+    .cabecalho {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        margin-top: 20px;
+        padding-left: 50px;
+    }
+
+    .parte-apresentacao {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-direction: column-reverse;
+        padding-top: 15%;
+        padding-left: 25%;
+    }
+
+    .apresentacao {
+        font-family: 'Jomolhari';
+        font-size: 20px;
+        padding-top: 30px;
+        margin-left: 4%;
+    }
+
+    .informacoes h2 {
+        font-size: 1.5em;
+        font-family: 'Jost';
+        margin-top: 5px;
+        margin-left: 40%;
+        padding-bottom: 60px;
+    }
+
+    .informacoes p {
+        font-family: Arial, Helvetica, sans-serif;
+        padding-top: 10px;
+        padding-left: 20%;
+        padding-right: 20%;
+        text-align: justify;
+        margin-left: 6%;
+        /* text-indent: 20px; */
+    }
+
+    .h1-skills {
+        margin-left: 37%;
+        font-size: 1.5em;
+        font-family: 'Jost';
+    }
+
+    /* .h2-projetos {
+        margin-top: 20%;
+        padding: 20px;
+        border-top: 0.4px solid #C0B5AC;
+        font-family: 'Jost';
+        font-size: 1.5em;
+    } */
+
+    .h2-projetos {
+        margin-top: 20%;
+        padding: 20px;
+        border-top: 0.4px solid #C0B5AC;
+        font-family: 'Jost';
+        padding-left: 12%;
+    }
+
+    #trabalhos {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 5%;
+        margin-bottom: -10%;
+    }
+
+    .projetos {
+        width: 170px;
+        height: 190px;
+        background-image: url('./img/trabalhos.png');
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+
+}
